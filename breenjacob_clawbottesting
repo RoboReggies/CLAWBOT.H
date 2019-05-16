@@ -1,0 +1,28 @@
+#include <kipr/botball.h>
+
+int main()
+{
+    int i = 0;
+    while (i <= 1000)
+    {  
+    motor(0, -100);
+    motor(1, 100);
+    i++;
+    }
+        if (i=1000){
+    motor(0,0);
+    motor(1,0);
+    motor(2, 100);
+    printf("\n I have Moved motor 2 \n");
+   if (digital(0) == 1)
+   {
+       msleep(0);
+   }
+       
+    }
+    
+     msleep(15000);
+    return 0;
+}
+
+
